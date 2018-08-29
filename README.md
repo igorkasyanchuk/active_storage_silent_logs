@@ -1,5 +1,7 @@
 # Active Storage silent logger
 
+The idea of this gem is to hide as much as possible Active Storage logs from console so you can see only important information and requests. So ...
+
 Do you like logs like:
 
 ```log
