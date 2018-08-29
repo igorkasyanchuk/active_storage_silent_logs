@@ -18,6 +18,8 @@ Imagine you have 1000 images to show! How long you need to scroll to see log of 
 
 So if you want this gem can hide such logs for you. Very useful for development.
 
+** Since Rails logger is not thread-safe this gem doesn't fix all messages, since one thread could impact another. If you want to hide - run puma with only one thread (open `puma.rb` and put `threads_count = ENV.fetch("RAILS_MAX_THREADS") { 1 }`).**
+
 ## Usage
 
 Just add gem into `Gemfile` in Rails app.
@@ -26,7 +28,7 @@ Just add gem into `Gemfile` in Rails app.
 
 
 ```ruby
-gem 'active_storage_silent_logs', group: [:development, :test]
+gem 'active_storage_silent_logs', group: :development
 ```
 
 And then execute:
@@ -37,9 +39,13 @@ $ bundle
 ## TODO
 * verify with other storages (s3 and other cloud services)
 * can we disable puma logger?
+* is it possible to fix issue with thread-safe with logger?
 
 ## Contributing
+
 You are welcome to contribute and help with testing.
+
+To play with gem open `test/dummy` and run `rake db:migrate` + `rails s -b 0.0.0.0 puma`.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

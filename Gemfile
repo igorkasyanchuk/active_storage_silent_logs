@@ -16,3 +16,6 @@ gemspec
 
 gem 'pry'
 gem 'puma'
+gem 'mini_magick'
+
+gem 'image_processing', '~> 1.2'

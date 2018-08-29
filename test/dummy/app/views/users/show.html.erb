@@ -7,7 +7,22 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= image_tag @user.photo %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '300x300') %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '200x200').processed %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '100x100').processed %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '50x50') %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '20x20') %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '10x10') %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '5x5').processed %>
+  <br/>
+  <%= image_tag @user.photo.variant(resize: '1x1') %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
