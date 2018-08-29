@@ -8,17 +8,17 @@ Processing by ActiveStorage::DiskController#show as PNG
   Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"image.png\"; filename*=UTF-8''image.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDExUkhSelFuaHpNbVJyV1dsNFVsaGpaMXBTYVV0YWNGUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDgtMjlUMTQ6MzA6MjAuMjE3WiIsInB1ciI6ImJsb2Jfa2V5In19--96a1e9bc562decfc1b9c22ebde2e57029ed5ea20", "filename"=>"image"}
 ```
 
-In console it looks like:
+What we don't like in console it looks like:
 
 [![Sample](https://raw.githubusercontent.com/igorkasyanchuk/active_storage_silent_logs/master/docs/log.png)](https://raw.githubusercontent.com/igorkasyanchuk/active_storage_silent_logs/master/docs/log.png)
 
-I think no. It looks like a garbage. 
+So do you like it? I think no. It looks like a garbage. 
 
 Imagine you have 1000 images to show! How long you need to scroll to see log of main request? 
 
 So if you want this gem can hide such logs for you. Very useful for development.
 
-** Since Rails logger is not thread-safe this gem doesn't fix all messages, since one thread could impact another. If you want to hide - run puma with only one thread (open `puma.rb` and put `threads_count = ENV.fetch("RAILS_MAX_THREADS") { 1 }`).**
+**Since Rails logger is not thread-safe this gem doesn't fix all messages, since one thread could impact another. If you want to hide - run puma with only one thread (open `puma.rb` and put `threads_count = ENV.fetch("RAILS_MAX_THREADS") { 1 }`).**
 
 ## Usage
 
