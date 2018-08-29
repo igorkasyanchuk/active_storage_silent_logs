@@ -8,6 +8,10 @@ Processing by ActiveStorage::DiskController#show as PNG
   Parameters: {"content_type"=>"image/png", "disposition"=>"inline; filename=\"image.png\"; filename*=UTF-8''image.png", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaDExUkhSelFuaHpNbVJyV1dsNFVsaGpaMXBTYVV0YWNGUUdPZ1pGVkE9PSIsImV4cCI6IjIwMTgtMDgtMjlUMTQ6MzA6MjAuMjE3WiIsInB1ciI6ImJsb2Jfa2V5In19--96a1e9bc562decfc1b9c22ebde2e57029ed5ea20", "filename"=>"image"}
 ```
 
+In console it looks like:
+
+[![Sample](https://raw.githubusercontent.com/igorkasyanchuk/active_storage_silent_logs/master/docs/log.png)](https://raw.githubusercontent.com/igorkasyanchuk/active_storage_silent_logs/master/docs/log.png)
+
 I think no. It looks like a garbage. 
 
 Imagine you have 1000 images to show! How long you need to scroll to see log of main request? 
