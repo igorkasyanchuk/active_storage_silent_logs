@@ -1,6 +1,11 @@
 # Active Storage silent logger
 
-[!["Buy Me A Coffee"](https://github.com/igorkasyanchuk/get-smart/blob/main/docs/snapshot-bmc-button-small.png?raw=true)](https://buymeacoffee.com/igorkasyanchuk)
+<a href="https://igorkasyanchuk.com/apps?ref=active_storage_silent_logs">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://igorkasyanchuk.com/versions/v1/banner-dark.svg">
+    <img src="https://igorkasyanchuk.com/versions/v1/banner-light.svg" width="720" alt="More tools from the author: Laki, DiffNotes and more. See all projects at igorkasyanchuk.com/apps">
+  </picture>
+</a>
 
 The idea of this gem is to hide as much as possible Active Storage logs from console so you can see only important information and requests. So ...
 
@@ -55,6 +60,4 @@ To play with gem open `test/dummy` and run `rake db:migrate` + `rails s -b 0.0.0
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 [<img src="https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/more_gems.png?raw=true"
-/>](https://www.railsjazz.com/?utm_source=github&utm_medium=bottom&utm_campaign=active_storage_silent_logs)
-
-[!["Buy Me A Coffee"](https://github.com/igorkasyanchuk/get-smart/blob/main/docs/snapshot-bmc-button.png?raw=true)](https://buymeacoffee.com/igorkasyanchuk)
+/>](https://www.igorkasyanchuk.com/)
