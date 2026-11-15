@@ -1,10 +1,7 @@
 # Active Storage silent logger
 
-<a href="https://igorkasyanchuk.com/apps?ref=active_storage_silent_logs">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://igorkasyanchuk.com/versions/v1/banner-dark.svg">
-    <img src="https://igorkasyanchuk.com/versions/v1/banner-light.svg" width="720" alt="More tools from the author: Laki, DiffNotes and more. See all projects at igorkasyanchuk.com/apps">
-  </picture>
+<a href="https://www.igorkasyanchuk.com/visit/laki?ref=active_storage_silent_logs">
+  <img src="https://www.igorkasyanchuk.com/versions/v2/laki-banner.gif" width="720" alt="Laki: run a team of AI coding agents. Lose track of none. Free at laki.sh">
 </a>
 
 The idea of this gem is to hide as much as possible Active Storage logs from console so you can see only important information and requests. So ...
